@@ -1,6 +1,6 @@
 //
 //  RecipeDetailView.swift
-//  Avocado
+//  Avocados
 //
 //  Created by Gaurav Bhasin on 6/8/21.
 //
@@ -19,13 +19,13 @@ struct RecipeDetailView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .center, spacing: 0) {
-                // Image
+                // IMAGE
                 Image(recipe.image)
                     .resizable()
                     .scaledToFit()
                 
                 Group {
-                    // Title
+                    // TITLE
                     Text(recipe.title)
                         .font(.system(.largeTitle, design: .serif))
                         .fontWeight(.bold)
@@ -33,13 +33,13 @@ struct RecipeDetailView: View {
                         .foregroundColor(Color("ColorGreenAdaptive"))
                         .padding(.top, 10)
                     
-                    // Rating
+                    // RATING
                     RecipeRatingView(recipe: recipe)
                     
-                    // Cooking
+                    // COOKING
                     RecipeCookingView(recipe: recipe)
                     
-                    // Ingredients
+                    // INGREDIENTS
                     Text("Ingredients")
                         .fontWeight(.bold)
                         .modifier(TitleModifier())
@@ -55,7 +55,7 @@ struct RecipeDetailView: View {
                         }
                     }
                     
-                    // Instructions
+                    // INSTRUCTIONS
                     Text("Instructions")
                         .fontWeight(.bold)
                         .modifier(TitleModifier())

@@ -1,6 +1,6 @@
 //
 //  RipeningView.swift
-//  Avocado
+//  Avocados
 //
 //  Created by Gaurav Bhasin on 6/8/21.
 //
@@ -35,7 +35,7 @@ struct RipeningView: View {
             
             VStack(alignment: .center, spacing: 10) {
                 
-                // Stage
+                // STAGE
                 VStack(alignment: .center, spacing: 10) {
                     Text(ripening.stage)
                         .font(.system(.largeTitle, design: .serif))
@@ -49,7 +49,7 @@ struct RipeningView: View {
                 .padding(.top, 65)
                 .frame(width: 180)
                 
-                // Title
+                // TITLE
                 Text(ripening.title)
                     .font(.system(.title, design: .serif))
                     .fontWeight(.bold)
@@ -63,7 +63,7 @@ struct RipeningView: View {
                             .shadow(color: Color("ColorBlackTransparentLight"), radius: 6, x: 0, y: 6)
                     )
                 
-                // Description
+                // DESCRIPTION
                 Spacer()
                 Text(ripening.description)
                     .foregroundColor(Color("ColorGreenDark"))
@@ -71,7 +71,7 @@ struct RipeningView: View {
                     .lineLimit(nil)
                 Spacer()
                 
-                // Ripeness
+                // RIPENESS
                 Text(ripening.ripeness.uppercased())
                     .foregroundColor(.white)
                     .font(.system(.callout, design: .serif))
@@ -86,7 +86,7 @@ struct RipeningView: View {
                             .shadow(color: Color("ColorBlackTransparentLight"), radius: 6, x: 0, y: 6)
                     )
                 
-                // Instruction
+                // INSTRUCTION
                 Text(ripening.instruction)
                     .font(.footnote)
                     .foregroundColor(Color("ColorGreenLight"))

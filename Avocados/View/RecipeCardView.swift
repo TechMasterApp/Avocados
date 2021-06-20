@@ -1,6 +1,6 @@
 //
 //  RecipeCardView.swift
-//  Avocado
+//  Avocados
 //
 //  Created by Gaurav Bhasin on 6/8/21.
 //
@@ -18,7 +18,7 @@ struct RecipeCardView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             
-            // Card Image
+            // CARD IMAGE
             Image(recipe.image)
                 .resizable()
                 .scaledToFit()
@@ -41,24 +41,24 @@ struct RecipeCardView: View {
             
             VStack(alignment: .leading, spacing: 12) {
                 
-                // Title
+                // TITLE
                 Text(recipe.title)
                     .font(.system(.title, design: .serif))
                     .fontWeight(.bold)
                     .foregroundColor(Color("ColorGreenMedium"))
                     .lineLimit(1)
                 
-                // Headline
+                // HEADLINE
                 Text(recipe.headline)
                     .font(.system(.body, design: .serif))
                     .foregroundColor(.gray)
                     .italic()
                 
-                // Rates
+                // RATES
                 RecipeRatingView(recipe: recipe)
                 
                 
-                // Cooking
+                // COOKING
                 RecipeCookingView(recipe: recipe)
                 
             }

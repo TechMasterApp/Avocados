@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Avocado
+//  Avocados
 //
 //  Created by Gaurav Bhasin on 6/8/21.
 //
@@ -17,7 +17,7 @@ struct ContentView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .center, spacing: 20) {
-                //MARK: - Header
+                // MARK: - HEADER
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(alignment: .top, spacing: 0) {
@@ -27,7 +27,7 @@ struct ContentView: View {
                     }
                 }
                 
-                //MARK: - Dishes
+                // MARK: - DISHES
                 Text("Avocado Dishes")
                     .fontWeight(.bold)
                     .modifier(TitleModifier())
@@ -35,7 +35,7 @@ struct ContentView: View {
                 DishesView()
                     .frame(maxWidth: 640)
                 
-                //MARK: - Avacado Facts
+                // MARK: - AVOCADO FACTS
                 Text("Avocado Facts")
                     .fontWeight(.bold)
                     .modifier(TitleModifier())
@@ -51,7 +51,7 @@ struct ContentView: View {
                     .padding(.trailing, 20)
                 }
                 
-                //MARK: - Recipe Cards
+                // MARK: - RECIPE CARDS
                 Text("Avocado Recipes")
                     .fontWeight(.bold)
                     .modifier(TitleModifier())
@@ -64,7 +64,7 @@ struct ContentView: View {
                 .frame(maxWidth: 640)
                 .padding(.horizontal)
                 
-                //MARK: - Footer
+                // MARK: - FOOTER
                 VStack(alignment: .center, spacing: 20) {
                     Text("All About Avocado")
                         .fontWeight(.bold)

@@ -1,6 +1,6 @@
 //
 //  SettingsView.swift
-//  Avocado
+//  Avocados
 //
 //  Created by Gaurav Bhasin on 6/8/21.
 //
@@ -16,7 +16,7 @@ struct SettingsView: View {
     
     var body: some View {
         VStack(alignment: .center, spacing: 0) {
-            //MARK: - Header
+            // MARK: - HEADER
             VStack(alignment: .center, spacing: 5) {
                 
                 Image("avocado")
@@ -34,7 +34,7 @@ struct SettingsView: View {
             .padding()
             
             Form {
-                //MARK: - Section #1
+                // MARK: - SECTION #1
                 
                 Section(header: Text("General Settings")) {
                     Toggle(isOn: $enableNotification) {
@@ -46,7 +46,7 @@ struct SettingsView: View {
                     }
                 }
                 
-                //MARK: - Sextion #2
+                // MARK: - SECTION #2
                 
                 Section(header: Text("Application")) {
                     if enableNotification {

@@ -1,6 +1,6 @@
 //
 //  DishesView.swift
-//  Avocado
+//  Avocados
 //
 //  Created by Gaurav Bhasin on 6/8/21.
 //
@@ -16,7 +16,7 @@ struct DishesView: View {
         
         HStack(alignment: .center, spacing: 4) {
             
-            //MARK: - 1. Column
+            // MARK: - 1. COLUMN
             VStack(alignment: .leading, spacing: 4) {
                 HStack {
                     Image("icon-toasts")
@@ -58,7 +58,7 @@ struct DishesView: View {
                 
             }
             
-            //MARK: - 2. Column
+            // MARK: - 2. COLUMN
             
             VStack(alignment: .center, spacing: 16) {
                 HStack {
@@ -72,7 +72,7 @@ struct DishesView: View {
                 }
             }
             
-            //MARK: - 3. Column
+            //MARK: - 3. COLUMN
             
             VStack(alignment: .trailing, spacing: 4) {
                 HStack {

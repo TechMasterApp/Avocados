@@ -1,6 +1,6 @@
 //
 //  RecipeRatingView.swift
-//  Avocado
+//  Avocados
 //
 //  Created by Gaurav Bhasin on 6/8/21.
 //
